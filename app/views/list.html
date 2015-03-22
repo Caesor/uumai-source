@@ -1,0 +1,121 @@
+<div class="detailPage container">
+	<div class="detail_search row">
+       <!--  <div class="detail_logo">
+            <p class="logo"><span>uumai</span> 悠悠买</p>
+        </div> -->
+        <div class="col-md-2">
+            <div class="dropdown ">
+                <a class="main_menu" href="javascript:;" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                    全部商品分类
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="https://twitter.com/fat">数码相机 
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fat">数码摄像机 
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fat">液晶电视 
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fat">冰箱 
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fat">空调 
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fat">洗衣机 
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fat">主板 
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fat">显卡 
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fat">内存 
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fat">固态硬盘
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fat">CPU 
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fat">液晶显示器 
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fat">手机 
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fat">笔记本 
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="搜一搜">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="search">GO</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- sort buttons -->
+    <div class="btn-group">
+        <button class="btn btn-default">综合排序</button>
+        <button class="btn btn-default">销量</button>
+        <button class="btn btn-default">价格</button>
+        <button class="btn btn-default">评论数</button>
+    </div>
+
+    <!-- goods list -->
+    <div class="goodList row">
+        <div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="list in lists">
+            <div class="thumbnail">
+                <a href="#/detail/{{list.pid}}" target="_blank">
+                    <img ng-src="{{list.thumbnail}}" alt="">
+                </a>
+                <div class="caption">
+                    <p ng-bind="list.name" class="listGoodDescrib">
+                        <a href="#/detail/{{list.pid}}" ng-bind="list.name"></a>
+                    </p>
+                    <p ng-bind="list.price | currency:'¥'" class="goods_price"></p>
+                    <p ng-bind="list.logo"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
