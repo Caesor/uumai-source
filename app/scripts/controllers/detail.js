@@ -7,7 +7,7 @@
 
 	function DetailCtrl($scope, ItemDetail){
 		$scope.item = ItemDetail;
-		ItemDetail.getData().then(function(data) {
+		ItemDetail.getData().success(function(data) {
 		    $scope.item = data;
 		});
 	}

@@ -1,4 +1,4 @@
-<div class="detailPage container">
+<div class="pageWidth container">
 	<!-- search -->
     <div class="detail_search row">
        <!--  <div class="detail_logo">
@@ -128,7 +128,7 @@
     		</tr>
     	</thead>
     	<tbody>
-    		<tr ng-repeat='list in item.others' goto="{{list.url}}">
+    		<tr ng-repeat='list in item.others'>
     			<td ng-bind="list.logo"></td>
     			<td ng-bind="list.name"></td>
     			<td ng-bind="list.price | currency:'¥'"></td>

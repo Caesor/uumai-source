@@ -11,7 +11,7 @@
 		}
 		function getData(){
 			return $http.get('data/detail'+ $routeParams.pid + '.json')
-				.then(function(response){
+				.success(function(response){
 					return response.data;
 	        	});
 		}

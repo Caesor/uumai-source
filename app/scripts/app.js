@@ -2,7 +2,7 @@
 	'use strict';
 
 	angular
-		.module('uumaiApp',['ngRoute','ngAnimate', 'chart.js'])
+		.module('uumaiApp',['ngRoute','ngAnimate', 'chart.js', 'brantwills.paging'])
 		.config(config);
 
 	function config($routeProvider){
@@ -10,6 +10,10 @@
 			.when('/', {
 				templateUrl: 'views/search.html',
 				controller: 'SearchCtrl'
+			})
+			.when('/login', {
+				templateUrl: 'views/login.html',
+				controller: 'LoginCtrl'
 			})
 			.when('/list', {
 				templateUrl: 'views/list.html',
@@ -19,6 +23,6 @@
 				templateUrl: 'views/detail.html',
 				controller: 'DetailCtrl'
 			})
-			.otherwise({ redirectTo: '/404.html' });
+			.otherwise({ redirectTo: '/' });
 	}
 })();

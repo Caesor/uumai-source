@@ -13,43 +13,21 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/list.css">
-    <link rel="stylesheet" href="styles/detail.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/pages.css">
     <!-- endbuild -->
   </head>
   <body ng-app="uumaiApp">
-
     <header>
-      <div class="topOut">
-        <div class="top wrapper">
-              <div class="topPrice1">
-              <div class="topPrice1sub">
-                  <span>商城降价榜：</span>
-                  <ul class="toplinkcontainer">
-                    <li class="nopop"><a href="/top/360buy.shtml" title="京东降价排行榜">京东</a></li>
-                    <li class="nopop"><a href="amazon.html" title="亚马逊降价排行榜">亚马逊</a></li>
-                    <li class="nopop"><a href="/top/yihaodian.shtml" title="一号店降价排行榜">一号店</a></li>
-                    <li class="nopop"><a href="/top/icson.shtml" title="易迅降价排行榜">易迅</a></li>
-                    <li class="nopop"><a href="/top/suning.shtml" title="苏宁降价排行榜">苏宁</a></li>
-                    <li class="nopop"><a href="/top/gome.shtml" title="国美降价排行榜">国美</a></li>
-                  
-                  </ul>
-              </div>
-              <div class="topPrice1sub">
-                  <span>分类降价榜：</span>
-                  <ul class="toplinkcontainer">
-                        <li class="nopop"><a href="/c_dc.shtml" title="数码相机降价排行榜">数码相机</a></li>
-                        <li class="nopop"><a href="/c_dv.shtml" title="数码摄像机降价排行榜">数码摄像机</a></li>
-                        
-                  </ul>
-              </div>
-              </div>
-          
+        <div class="container">
+            <div class="navbar-left">
+                <span href="/" class="header_nav header_logo">UUmai悠悠买</span>
+            </div>
+            <div class="">
+                <a href="#/login" class="header_nav navbar-right">注册</a>
+                <a href="#/login" class="header_nav navbar-right">登陆</a>
+            </div>
         </div>
-        <div class="clear"></div>
-      </div>
-
     </header>
 
     <div class="main" ng-view></div>
@@ -90,7 +68,9 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/main.js"></script>
+        <script src="scripts/controllers/keyboard.js"></script>
+        <script src="scripts/controllers/paging.js"></script>
+        <script src="scripts/controllers/login.js"></script>
         <script src="scripts/controllers/search.js"></script>  
         <script src="scripts/controllers/items.js"></script>
         <script src="scripts/controllers/list.js"></script>
