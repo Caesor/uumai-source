@@ -15,6 +15,10 @@
 				templateUrl: 'views/login.html',
 				controller: 'LoginCtrl'
 			})
+			.when('/register', {
+				templateUrl: 'views/register.html',
+				controller: 'RegisterCtrl'
+			})
 			.when('/list', {
 				templateUrl: 'views/list.html',
 				controller: 'ListCtrl'

@@ -14,7 +14,8 @@ p { text-indent:0; }
 .noMbottom{margin-bottom: 0;}
 .my-btn{border: none;border-radius: 0px;margin: 5px 0;padding: 5px 20px;}
 
-body{position: relative;font-family: Arial,Verdana;}
+html{min-height: 100%;}
+body{height:100%; position: relative;font-family: Arial,Verdana;}
 .pageWidth{width: 80%; max-width: 1000px;}
 
 /* fix btn active bug */
@@ -26,4 +27,15 @@ body{position: relative;font-family: Arial,Verdana;}
 .icon-btn:hover{color:#d58512;}
 .orange{color:#ec971f;}
 .alignRight{text-align: right;}
+.floatRight{float: right;}
 .form_label{margin-left: 15px;}
+
+.green{background-color: rgb(126, 205, 126);}
+.red{background-color: rgb(215, 104, 104);}
+.blue{background-color: rgb(82, 187, 226); }
+
+.my-btn2{color: #888;font-size: 12px;padding: 2px 8px;border: 1px solid #ccc;}
+
+.alertDanger{color: #a94442;background-color: #f2dede;}
+.alertSuccess{color: #3c763d;background-color: #dff0d8;}
+.alertWarning{color: #8a6d3b;background-color: #fcf8e3;}
