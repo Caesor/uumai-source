@@ -49,8 +49,10 @@
 					url: 'https://cn.avoscloud.com/1.1/login',
 					params : $scope.userIdentity
 				}).success(function(data){
+					//show tips
 					$scope.isSuccess =  true;
 					$scope.messageText = data.username + ", 欢迎您";
+					// keep user
 					$rootScope.currentUser = data;
 					$location.path('/list');
 				}).error(function(data){
@@ -66,8 +68,10 @@
 						smsCode : $scope.userIdentity.password
 					}
 				}).success(function(data){
+					// show tips
 					$scope.isSuccess =  true;
 					$scope.messageText = data.username + ", 欢迎您";
+					// keep user
 					$rootScope.currentUser = data;
 					$location.path('/list');
 				}).error(function(data){

@@ -50,7 +50,6 @@
 		
 		// switch register && sms vertify
 		$scope.registerStage = true;
-		$scope.smsCodeStage = false;
 
 		// register form information
 		$scope.currentUser = {
@@ -82,13 +81,14 @@
 			}).success(function(){
 				// keep mobile phone number for vertify
 				$scope.sms.mobilePhoneNumber = $scope.currentUser.mobilePhoneNumber;
+				
 				// show tips 
 				$scope.isSuccess = true;
 				$scope.messageText = "注册成功,请前往邮箱确认！";
 				$scope.showMsg = true;
-				// switch the interface
+
+				// switch to sms code vertify form
 				$scope.registerStage = false;
-				$scope.smsCodeStage = true;
 				
 			}).error(function(data){
 				$scope.isSuccess = false;
