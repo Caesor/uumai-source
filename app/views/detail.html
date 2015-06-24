@@ -125,15 +125,16 @@
     			<th>商品名称</th>
     			<th>价格</th>
     			<th>库存</th>
+                <th></th>
     		</tr>
     	</thead>
     	<tbody>
     		<tr ng-repeat='list in item.others'>
-    			<td ng-bind="list.logo"></td>
+    			<td class="text-center" ng-bind="list.logo"></td>
     			<td ng-bind="list.name"></td>
-    			<td ng-bind="list.price | currency:'¥'"></td>
-    			<td ng-bind="list.source"></td>
-                <td><a ng-href="{{list.url}}">前往</a></td>
+    			<td class="text-center" ng-bind="list.price | currency:'¥'"></td>
+    			<td class="text-center" ng-bind="list.source"></td>
+                <td class="text-center"><a ng-href="{{list.url}}">前往</a></td>
     		</tr>
     	</tbody>
     </table>
